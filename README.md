@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TMD: FullStack Intern Assignment
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This assignment involves setting up a web application where users can input a prompt to generate social media posts text using OpenAI's API. These posts should then be saved to a Google Spreadsheet using Google Sheets API (without using Google SDKs). For a bonus, the application should be able to fetch and display the posts from the spreadsheet.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Your Tasks
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Generate Social Media Posts**:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   - Use OpenAI's API to generate social media posts texts based on the user's prompt.
+   - Ensure that you use your own OpenAI API key.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Create and Use a Google Spreadsheet**:
 
-## Learn More
+   - Create a new Google Spreadsheet in your Google account.
+   - Get the Required keys from your own Google Cloud Console.
 
-To learn more about Next.js, take a look at the following resources:
+3. **Save Posts to Google Spreadsheet**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   - Save the generated social media posts to the newly created Google Spreadsheet using the Google Sheets API.
+   - The spreadsheet should contain the following columns:
+     - `Timestamp`: The date and time when the post was created.
+     - `Prompt`: The original user input.
+     - `Post`: The generated social media post.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Bonus: Retrieve and Display Posts**:
+   - Fetch the social media posts from the Google Spreadsheet.
+   - Display the fetched posts text on the UI below the input field.
 
-## Deploy on Vercel
+## Estimated Time
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Please spend no more than 1 day on this assignment and submit whatever you can complete within that time frame.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Bonus Tasks
+
+1. Retrieve and display the generated posts from the Google Spreadsheet on the UI.
+2. Add error handling and user feedback for API requests.
+
+## Submission
+
+1. Ensure all your changes are committed.
+2. Push your changes to a new repository on your personal GitHub account with public access.
+3. Provide a link to your repository, along with your email and phone number, in the provided Google Form.
+4. Include the URL of your Google Spreadsheet in your README.
+
+#### Note: Use your API keys for development purposes only. Include the variables in the `.env.example` file for reference.
