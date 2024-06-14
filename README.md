@@ -45,3 +45,6 @@ Please spend no more than 1 day on this assignment and submit whatever you can c
 4. Include the URL of your Google Spreadsheet in your README.
 
 #### Note: Use your API keys for development purposes only. Include the variables in the `.env.example` file for reference.
+
+## Important Note:
+Do not use the googleapis package or any Google SDKs. Interact with the Google Sheets API using direct HTTP requests instead.
